@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --- TU CÓDIGO NUEVO EMPIEZA AQUÍ --- */
+
+.contenedor-principal {
+ background-image: url('https://i.pinimg.com/originals/71/e6/db/71e6dbba8e5cd31b5b6480262eafd79d.gif');
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.tarjeta {
+  background-color: rgba(10, 230, 57, 0.7);
+  backdrop-filter: blur(8px);
+  padding: 2rem;
+  border-radius: 1px;
+  border: 4px solid red;
+  text-align: center;
+  box-shadow: 0 10px 15px rgba(230, 5, 5, 0.884);
+  color: white;
+  margin-top: 5px;
+  animation: entrada 1s ease-out forwards;
+}
+
+.boton-accion {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: rgb(231, 20, 20);
+  color: white;
+  }
+  
+.boton-accion:hover {
+    background-color: rgb(238, 255, 0);
+    color: black;
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+
+  h1 {
+    font-family: sans-serif;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-family: sans-serif;
+    margin-bottom: 20px;
+  }
+
+@keyframes entrada {
+  0% { opacity: 0; transform: translateY(-20px); } /* Empieza invisible y un poco arriba */
+  100% { opacity: 1; transform: translateY(0); }   /* Termina visible y en su sitio */
+}
